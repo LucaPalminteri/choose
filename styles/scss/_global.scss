@@ -3,10 +3,41 @@
     padding: 0;
   }
 
+
+@keyframes question {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  body {
+    background-color: #222;
+    color: #FFF;
+  }
+
   .main-header {
-    width: 100%;
+    padding-left: 50px;
     height: 60px;
-    background-color: #EFEFEF;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    h2 {
+      margin-left: auto;
+    }
+
+  }
+
+  h2 {
+      text-align: center;
+      padding: 90px;
+      font-size: 250%;
+      animation-name: question;
+      animation-duration: 1s;
   }
 
   #main {
@@ -14,18 +45,27 @@
     justify-content: center;
     align-items: center;
 
+    
+
     button {
-        padding: 15%;
+        width: 50vh;
+        height: 50vh;
         margin: 2%;
         transition-duration: .2s;
         border: none;
         border-radius: 5%;
+        font-size: 200%;
+        background-color: #333;
+        color: #FFF;
+        animation-name: question;
+        animation-duration: 1s;
 
         &:hover {
             cursor: pointer;
             background-color: lightgreen;
             border-radius: 0;
             transform: scale(1.1);
+            color: #222;
 
             button {
                 background-color: red;

@@ -14,7 +14,8 @@ export default function RootLayout({
       <head />
       <body>
         <header className='main-header'>
-          info
+          <h1>Choose.com</h1>
+          <h2>Luca Palminteri</h2>
         </header>
         {children}
       </body>

@@ -3,10 +3,48 @@
   padding: 0;
 }
 
+@-webkit-keyframes question {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes question {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-color: #222;
+  color: #FFF;
+}
+
 .main-header {
-  width: 100%;
+  padding-left: 50px;
   height: 60px;
-  background-color: #EFEFEF;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-header h2 {
+  margin-left: auto;
+}
+
+h2 {
+  text-align: center;
+  padding: 90px;
+  font-size: 250%;
+  -webkit-animation-name: question;
+          animation-name: question;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #main {
@@ -15,17 +53,26 @@
   align-items: center;
 }
 #main button {
-  padding: 15%;
+  width: 50vh;
+  height: 50vh;
   margin: 2%;
   transition-duration: 0.2s;
   border: none;
   border-radius: 5%;
+  font-size: 200%;
+  background-color: #333;
+  color: #FFF;
+  -webkit-animation-name: question;
+          animation-name: question;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #main button:hover {
   cursor: pointer;
   background-color: lightgreen;
   border-radius: 0;
   transform: scale(1.1);
+  color: #222;
 }
 #main button:hover button {
   background-color: red;

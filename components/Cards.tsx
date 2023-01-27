@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from './Button'
+import { options } from '@/types/questions'
 
-function Cards() {
+function Cards({options}:{options:options}) {
+
   return (
     <div>
         <main id="main">
-            <Button/>
-            <Button/>
+            <Button option={options.option_one}/>
+            <Button option={options.option_two}/>
         </main>
     </div>
   )
